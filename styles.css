@@ -1,0 +1,55 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte en blanc */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style pour l'en-tête h1 */
+h1 {
+    font-size: 24px;
+    color: #ddd; /* Couleur du titre légèrement plus claire */
+}
+
+/* Style pour le paragraphe p */
+p {
+    font-size: 16px;
+    color: #ccc; /* Couleur du texte légèrement plus claire */
+    margin-bottom: 20px;
+}
+
+/* Style pour l'élément <embed> affichant le PDF */
+embed {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #555; /* Couleur de la bordure légèrement plus foncée */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée */
+}
+
+/* Style pour le lien de téléchargement du CV */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
