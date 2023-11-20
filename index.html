@@ -37,7 +37,7 @@
         <div id="main">
             <article class="post featured">
                 <header class="major">
-                    <span class="date">01 Octobre 2023</span>
+                    <span id="currentDate" class="date"></span>
                     <h2 class="section-title">Mon Parcours</h2>
                     <div class="parcours">
                         <div class="parcours-item">
@@ -53,22 +53,49 @@
                             <p>Actuellement en formation BTS Services Informatiques aux Organisations, option SLAM à Ella Fitzgerald, à Saint-Romain-en-Gal.</p>
                         </div>
                     </div>
-                    <h3 class="section-title">Compétences :</h3>
-                    <ul class="competences">
-                        <li>Polyvalent</li>
-                        <li>Curieux</li>
-                        <li>Ponctuel</li>
-                    </ul>
-                    <h3 class="section-title">Langages :</h3>
-                    <ul class="langues">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>C#</li>
-                        <li>Javascript</li>
-                    </ul>
+                    <h3 class="section-title">Compétences et Langages :</h3>
+                    <div class="competences-langages">
+                        <div class="competences">
+                            <h3>Compétences :</h3>
+                            <ul>
+                                <li>Polyvalent</li>
+                                <li>Curieux</li>
+                                <li>Ponctuel</li>
+                                <li>Esprit d'équipe</li>
+                            </ul>
+                        </div>                        
+                        <div class="langages">
+                            <h3>Langages :</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>C#</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>                        
+                    </div>
                 </header>
             </article>
         </div>
+        
+        
+
+        <script>
+            // Fonction pour formater la date sous la forme "jj MMMM YYYY"
+            function formatDate(date) {
+                const options = { day: '2-digit', month: 'long', year: 'numeric' };
+                return new Date(date).toLocaleDateString('fr-FR', options);
+            }
+        
+            // Mettre à jour la date actuelle dans l'élément avec l'ID "currentDate"
+            document.getElementById('currentDate').textContent = formatDate(new Date());
+        </script>
+
+
         <footer id="footer">
             <section class="split contact">
                 <section class="alt">

@@ -4687,3 +4687,44 @@ input, select, textarea {
 		}
 
 	}
+
+	.post {
+		background-color: #f9f9f9;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.section-title {
+		color: #333;
+	}
+	
+	.parcours-item {
+		margin-bottom: 20px;
+	}
+	
+	.competences-langages {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.competences,
+	.langages {
+		width: 48%; /* Ajustez la largeur selon vos besoins */
+	}
+	
+	.competences ul,
+	.langages ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	
+	.competences h3,
+	.langages h3 {
+		color: #333;
+		font-size: 1.2em;
+	}
+	
+	.competences li,
+	.langages li {
+		margin-bottom: 10px;
+	}
