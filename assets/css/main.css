@@ -4728,3 +4728,9 @@ input, select, textarea {
 	.langages li {
 		margin-bottom: 10px;
 	}
+
+	/* Ajouter du style au trait de séparation */
+.separator {
+    border: 1px solid #000; /* Couleur et style de la bordure */
+    margin: 10px 0; /* Espacement autour du trait */
+}
