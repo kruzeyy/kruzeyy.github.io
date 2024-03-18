@@ -12,7 +12,8 @@
     <div id="wrapper" class="fade-in">
         <div id="intro">
             <h1>Mon<br>Portfolio</h1>
-            <p>Je m'appelle Maxime, j'ai 19  ans et je suis en deuxième année de BTS SIO (Services informatiques aux organisations) option SLAM (Solutions Logicielles et Applications Métier).</p>
+            <input type="hidden" id="dateAnniversaire" value="2004-12-26">
+            <p>Je m'appelle Maxime, j'ai <span id="displayAge"></span> et je suis en deuxième année de BTS SIO (Services informatiques aux organisations) option SLAM (Solutions Logicielles et Applications Métier).</p>
             <ul class="actions">
                 <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continuer</a></li>
                 <!-- Ajouter un lien vers CV.html qui s'ouvre dans un nouvel onglet -->
@@ -38,7 +39,6 @@
         <div id="main">
             <article class="post featured">
                 <header class="major">
-                    <span id="currentDate" class="date"></span>
                     <h2 class="section-title">Mon Parcours</h2>
                     <div class="parcours">
                         <div class="parcours-item">
@@ -83,10 +83,10 @@
 
                     <div class="parcours-item">
                         <h3>Mes projets effectués</h3>
-                        <img src="logo-mulitburo.jpg" alt="Logo de multiburo" class="logo">
-                        <img src="logo gourmetise.jpg" alt="Logo de gourmetise" class="logo">
+                        <img src="logo-mulitburo.jpg" alt="Logo de multiburo" class="image">
+                        <img src="logo gourmetise.jpg" alt="Logo de gourmetise" class="image">
                         <style>
-                            .logo {
+                            .image {
                                 width: 300px; /* ou la taille que vous souhaitez */
                                 height: auto; /* pour conserver le ratio */
                                 display: inline-block; /* pour afficher côte à côte */
@@ -97,8 +97,15 @@
 
                     <div class="parcours-item">
                         <h3>Veille technologique</h3>
-                        <img src="logo-feedly-1-640x360.jpg" alt="Logo de feedly" class="logo">
-                        <img src="logo ai.jpg" alt="Logo ai" class="logo">
+                        <img src="logo-feedly-1-640x360.jpg" alt="Logo de feedly" class="image">
+                        <img src="logo ai.jpg" alt="Logo ai" class="image">
+                        
+                    </div>
+
+                    <div class="parcours-item">
+                        <h3>Certification</h3>
+                        <img src="logo pix.png" alt="Logo de pix" class="image">
+                        <img src="logo ai.jpg" alt="Logo ai" class="image">
                         
                     </div>
                     

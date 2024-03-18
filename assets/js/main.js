@@ -255,4 +255,28 @@
 
 		}
 
+		$(document).ready(function() {
+			// Function to calculate age
+			function calculateAge() {
+				// Get the current date
+				var currentDate = new Date();
+	
+				// Get the birthday date from the input field
+				var birthdayDate = new Date($("#dateAnniversaire").val());
+				console.log(birthdayDate);
+				// Calculate the age
+				var age = currentDate.getFullYear() - birthdayDate.getFullYear();
+	
+				// Adjust the age if the birthday hasn't occurred yet this year
+				if (currentDate.getMonth() < birthdayDate.getMonth() || (currentDate.getMonth() === birthdayDate.getMonth() && currentDate.getDate() < birthdayDate.getDate())) {
+					age--;
+				}
+	
+				// Display the age
+				$("#displayAge").text(age + " ans");
+			}
+	
+			// Trigger the age calculation function on page load
+			calculateAge();
+		});
 })(jQuery);
